@@ -20,7 +20,7 @@ export default function Home() {
       </header>
 
       <div className="w-full bg-gradient-to-r from-red-500 to-blue-500 rounded-md p-1 flex flex-col justify-center items-center mb-4">
-        <div className="bg-zinc-100 w-full h-full p-4 flex flex-col justify-center items-center gap-4">
+        <div className="bg-zinc-100 rounded w-full h-full p-4 flex flex-col justify-center items-center gap-4">
           <CollectionCards />
           <Button className="bg-zinc-100 border border-blue-500 hover:bg-blue-500 text-lg text-zinc-950 hover:text-zinc-100 w-full">
             Dashboard -{'>'}

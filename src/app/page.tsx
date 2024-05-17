@@ -1,9 +1,10 @@
 import CollectionCards from '@/components/collection-cards';
+import SocialLinks from '@/components/social-links';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center flex-col gap-4 p-4">
+    <main className="flex flex-col items-center justify-center gap-4 p-4 lg:w-[80%] min-h-screen">
       <header className="flex items-end justify-start gap-4 p-6 h-24 w-full rounded-xl bg-gradient-to-r from-blue-500 to-red-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,8 +20,8 @@ export default function Home() {
         <h1 className="font-semibold text-3xl text-zinc-100">MyBookshelf</h1>
       </header>
 
-      <section className="flex flex-col justify-center lg:flex-row gap-4">
-        <div className="lg:order-last w-full lg:w-1/3 bg-zinc-100 rounded-md p-4 flex flex-col justify-center items-center gap-4">
+      <section className="flex flex-col justify-center gap-4 w-full">
+        <div className="w-full bg-zinc-100 rounded-md p-4 flex flex-col justify-center items-center gap-4">
           <h1 className="text-3xl text-center">
             Welcome to{' '}
             <span className="text-blue-500 font-semibold">MyBookshelf</span>
@@ -31,23 +32,22 @@ export default function Home() {
           </Button>
         </div>
 
-        <div className="w-full lg:w-2/3 bg-gradient-to-r from-red-500 to-blue-500 rounded-md p-1 flex flex-row justify-center items-center">
-          <div className="bg-zinc-100 rounded w-full h-full p-4 flex flex-col justify-center items-center gap-4">
-            <div className="bg-blue-600 text-lg text-zinc-100 w-full rounded-md p-1 text-center">
-              Collection
-            </div>
-            <CollectionCards />
+        <div className="bg-zinc-100 rounded w-full h-full p-4 flex flex-col justify-center items-center gap-4">
+          <div className="bg-blue-600 text-lg text-zinc-100 w-full rounded-md p-1 text-center">
+            Collection
           </div>
+          <CollectionCards />
         </div>
       </section>
 
       <footer className="w-full">
-        <div className="bg-gradient-to-r from-red-500 to-blue-500 p-4 text-zinc-100 rounded-md">
+        <div className="flex justify-between items-center bg-gradient-to-r from-red-500 to-blue-500 p-4 text-zinc-100 rounded-md">
           <p>Ausath Abdi Dzil Ikram</p>
-          {/* Social Links */}
+          <div className="flex gap-4 sm:mx-4">
+            <SocialLinks />
+          </div>
         </div>
       </footer>
     </main>
   );
 }
-

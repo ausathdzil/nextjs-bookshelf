@@ -70,25 +70,4 @@ export const books: Books[] = [
     color: 'bg-red-500',
     link: 'https://www.google.co.id/books/edition/Crime_and_Punishment/aCgVAAAAYAAJ?hl=en&gbpv=0',
   },
-  {
-    title: 'Crime and Punishment',
-    author: 'Fyodor Dostoevsky',
-    genre: 'Literary Fiction',
-    color: 'bg-red-500',
-    link: 'https://www.google.co.id/books/edition/Crime_and_Punishment/aCgVAAAAYAAJ?hl=en&gbpv=0',
-  },
-  {
-    title: 'Crime and Punishment',
-    author: 'Fyodor Dostoevsky',
-    genre: 'Literary Fiction',
-    color: 'bg-red-500',
-    link: 'https://www.google.co.id/books/edition/Crime_and_Punishment/aCgVAAAAYAAJ?hl=en&gbpv=0',
-  },
-  {
-    title: 'Crime and Punishment',
-    author: 'Fyodor Dostoevsky',
-    genre: 'Literary Fiction',
-    color: 'bg-red-500',
-    link: 'https://www.google.co.id/books/edition/Crime_and_Punishment/aCgVAAAAYAAJ?hl=en&gbpv=0',
-  },
 ];

@@ -1,7 +1,6 @@
 import { books } from '@/lib/books';
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -10,7 +9,7 @@ import Link from 'next/link';
 
 export default function CollectionCards() {
   return (
-    <div className="grid grid-cols-4 gap-2 w-full h-full">
+    <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-2 w-full h-full">
       {books.map((book, index) => (
         <div
           key={index}
@@ -23,7 +22,7 @@ export default function CollectionCards() {
               <Link
                 href={book.link}
                 target="_blank"
-                className="hover:underline underline-offset-4"
+                className="hover:underline underline-offset-2"
               >
                 <CardTitle>{book.title}</CardTitle>
               </Link>

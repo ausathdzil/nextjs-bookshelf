@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center flex-col gap-2 p-4">
-      <header className="flex items-end justify-start gap-4 p-6 h-36 w-full rounded-xl bg-gradient-to-r from-blue-500 to-red-500">
+    <main className="flex items-center justify-center flex-col gap-4 p-4">
+      <header className="flex items-end justify-start gap-4 p-6 h-24 w-full rounded-xl bg-gradient-to-r from-blue-500 to-red-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="32"
@@ -19,19 +19,30 @@ export default function Home() {
         <h1 className="font-semibold text-3xl text-zinc-100">MyBookshelf</h1>
       </header>
 
-      <div className="w-full bg-gradient-to-r from-red-500 to-blue-500 rounded-md p-1 flex flex-col justify-center items-center mb-4">
-        <div className="bg-zinc-100 rounded w-full h-full p-4 flex flex-col justify-center items-center gap-4">
-          <CollectionCards />
-          <Button className="bg-zinc-100 border border-blue-500 hover:bg-blue-500 text-lg text-zinc-950 hover:text-zinc-100 w-full">
+      <section className="flex flex-col justify-center lg:flex-row gap-4">
+        <div className="lg:order-last w-full lg:w-1/3 bg-zinc-100 rounded-md p-4 flex flex-col justify-center items-center gap-4">
+          <h1 className="text-3xl text-center">
+            Welcome to{' '}
+            <span className="text-blue-500 font-semibold">MyBookshelf</span>
+          </h1>
+          <p>Manage your books here.</p>
+          <Button className="bg-blue-600 hover:bg-blue-500 text-lg text-zinc-100">
             Dashboard -{'>'}
           </Button>
         </div>
-      </div>
+
+        <div className="w-full lg:w-2/3 bg-gradient-to-r from-red-500 to-blue-500 rounded-md p-1 flex flex-row justify-center items-center">
+          <div className="bg-zinc-100 rounded w-full h-full p-4 flex flex-col justify-center items-center gap-4">
+            <div className="bg-blue-600 text-lg text-zinc-100 w-full rounded-md p-1 text-center">
+              Collection
+            </div>
+            <CollectionCards />
+          </div>
+        </div>
+      </section>
 
       <footer className="w-full">
-        <hr className="h-1 border-none bg-gradient-to-r from-red-500 to-blue-500 rounded mb-4" />
-
-        <div>
+        <div className="bg-gradient-to-r from-red-500 to-blue-500 p-4 text-zinc-100 rounded-md">
           <p>Ausath Abdi Dzil Ikram</p>
           {/* Social Links */}
         </div>
@@ -39,3 +50,4 @@ export default function Home() {
     </main>
   );
 }
+

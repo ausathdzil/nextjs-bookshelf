@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function SocialLinks() {
   return (
-    <>
+    <div className="flex gap-6 sm:mx-4">
       <Link
         href="https://github.com/ausathdzil"
         target="_blank"
@@ -37,6 +37,6 @@ export default function SocialLinks() {
           />
         </svg>
       </Link>
-    </>
+    </div>
   );
 }

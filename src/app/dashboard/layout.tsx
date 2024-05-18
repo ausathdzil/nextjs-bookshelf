@@ -5,7 +5,7 @@ import TopNav from '@/components/topnav';
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <header className="flex justify-start items-center gap-1 p-4 m-4 rounded-xl bg-gradient-to-r from-red-500 to-blue-500">
+      <header className="flex justify-start items-center gap-2 p-4 m-4 rounded-xl bg-gradient-to-r from-red-500 to-blue-500">
         <Link href="/">
           <Button
             variant="ghost"

@@ -21,12 +21,14 @@ export default function Home() {
         <h1 className="font-semibold text-3xl text-zinc-100">MyBookshelf</h1>
       </header>
 
-      <main className="flex flex-col items-center justify-center gap-4 px-4">
-        <section className="flex flex-col justify-center gap-4 w-full">
+      <main className="flex flex-col justify-start items-center gap-4 px-4 min-h-screen">
+        <section className="flex flex-col justify-start gap-4 w-full">
           <div className="w-full bg-zinc-100 rounded-md p-4 flex flex-col justify-center items-center gap-4">
             <h1 className="text-3xl text-center">
               Welcome to{' '}
-              <span className="text-blue-500 font-semibold">MyBookshelf</span>
+              <span className="text-blue-500 font-semibold">
+                <span className="text-red-500">My</span>Bookshelf
+              </span>
             </h1>
             <p>Manage your books here.</p>
             <Link href="/dashboard/overview">
@@ -36,7 +38,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="bg-zinc-100 rounded w-full h-full p-4 flex flex-col justify-center items-center gap-4">
+          <div className="bg-zinc-100 rounded w-full h-full p-4 flex flex-col justify-start items-center gap-4">
             <div className="bg-blue-600 text-lg text-zinc-100 w-full rounded-md p-1 text-center">
               Collection
             </div>

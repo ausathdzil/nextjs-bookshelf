@@ -7,10 +7,12 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
+import { Button } from './ui/button';
+import { Settings } from 'lucide-react';
 
 export default function TopNav() {
   return (
-    <div className="w-full p-4 bg-zinc-100 rounded-md flex justify-center">
+    <div className="p-4 bg-zinc-100 flex justify-between items-center rounded-xl w-full">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem className="flex gap-4">
@@ -35,6 +37,13 @@ export default function TopNav() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      <Button
+        variant="ghost"
+        size="sm"
+        className="hover:bg-zinc-200"
+      >
+        <Settings color="#09090b" />
+      </Button>
     </div>
   );
 }

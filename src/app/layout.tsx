@@ -15,7 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="antialiased"
+    >
       <body
         className={`${inter.className} bg-zinc-50 text-zinc-950 sm:w-[80%] mx-auto min-h-screen flex flex-col justify-between`}
       >

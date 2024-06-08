@@ -4,4 +4,5 @@ a catalogue for managing books.
 
 - [next.js](https://nextjs.org/)
 - [tailwindcss](https://tailwindcss.com/)
+- [tremor](https://github.com/tremorlabs/tremor)
 - [shadcn-ui](https://ui.shadcn.com/)
